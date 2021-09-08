@@ -1,0 +1,50 @@
+{
+  "plugins": ["import", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "import/no-duplicates": "off",
+    "import/no-unresolved": "error",
+    "import/prefer-default-export": "off",
+    "newline-after-var": "warn",
+    "no-console": "off",
+    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "no-nested-ternary": "warn",
+    "no-plusplus": ["warn", { "allowForLoopAfterthoughts": true }],
+    "no-shadow": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-curly-spacing": ["warn", { "when": "never", "allowMultiline": true }],
+    "react/static-property-placement": ["off", {}],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  }
+}
