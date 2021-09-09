@@ -6,10 +6,11 @@ Fetch posts from reddit r/pics subreddit and show them on the website
 
 - [ReactJs] - HTML enhanced for web apps!
 - [SCSS] - CSS Pre-Processor
+- [mswjs] - For Mocking APIs for test
 
 ## Installation
 
-Requires [Node.js](https://nodejs.org/) v10+ to run better if v14.
+Requires [Node.js](https://nodejs.org/) v10+ or v14 to run.
 
 Install the dependencies and devDependencies and start the server.
 
@@ -38,5 +39,6 @@ yarn test --coverage
 [reactjs]: https://reactjs.org/
 [scss]: https://sass-lang.com/
 [netlify]: https://www.netlify.com/
+[mswjs]: https://mswjs.io/
 
 Deployed on [Netlify]
