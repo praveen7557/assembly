@@ -1,0 +1,25 @@
+.post-details {
+  position: relative;
+
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .go-home {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  .image {
+    max-width: 600px;
+    margin-top: 20px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
