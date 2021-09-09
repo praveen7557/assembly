@@ -18,7 +18,7 @@ export const Post: FunctionComponent<Props> = ({ posts }) => {
 
   useEffect(() => {
     setPost(posts.find((post) => post.id === id));
-  }, []);
+  }, [id]);
 
   return (
     <div className="post-details">

@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { fetchSubredditPosts } from 'api/subs';
 import { Home } from 'views/home/Home';
@@ -17,7 +17,7 @@ const App: FunctionComponent = ({}) => {
 
         setPosts(posts);
       } catch (error) {
-        console.log(error); // Could show error here using some toast libraries
+        // Could show error here using some toast libraries
       } finally {
         setLoading(false);
       }

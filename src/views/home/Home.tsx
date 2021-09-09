@@ -34,7 +34,15 @@ export const Home: FunctionComponent<Props> = ({ posts }) => {
         <div className="search-container">
           <div className="text-box">
             <span className="icon">&#128269;</span>
-            <input type="text" value={search} onChange={onSearchChange} placeholder="Search Posts" className="search" />
+            <input
+              type="text"
+              value={search}
+              onChange={onSearchChange}
+              placeholder="Search Posts"
+              className="search"
+              name="Search Posts"
+              aria-label="Search Posts"
+            />
             {search ? (
               <div className="close" role="button" title="Clear Search" onClick={onSearchClear}>
                 &#x2715;
