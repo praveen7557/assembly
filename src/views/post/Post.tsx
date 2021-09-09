@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Post as PostType } from 'types/post';
 
@@ -24,6 +24,9 @@ export const Post: FunctionComponent<Props> = ({ posts }) => {
     <div className="post-details">
       <h3 className="title">{post?.title}</h3>
       <div className="author">by {post?.author}</div>
+      <div className="details">
+        {post?.ups} upvotes, {post?.num_comments} comments
+      </div>
       <div className="image">
         <img src={post?.url} alt={post?.title} />
       </div>
