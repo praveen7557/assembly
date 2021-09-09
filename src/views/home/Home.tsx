@@ -50,24 +50,28 @@ export const Home: FunctionComponent<Props> = ({ posts }) => {
             ) : null}
           </div>
         </div>
-        <div className="posts">
-          {list.map(({ title, thumbnail, author, id, ups, num_comments }) => (
-            <Link to={`/post/${id}`} key={id} className="post-link">
-              <div className="post">
-                <div className="image">
-                  <img src={thumbnail} alt={title} />
-                </div>
-                <div className="info">
-                  <div className="title">{title}</div>
-                  <div className="author">Posted by {author}</div>
-                  <div className="details">
-                    {ups} upvotes, {num_comments} comments
+        {list.length ? (
+          <div className="posts">
+            {list.map(({ title, thumbnail, author, id, ups, num_comments }) => (
+              <Link to={`/post/${id}`} key={id} className="post-link">
+                <div className="post">
+                  <div className="image">
+                    <img src={thumbnail} alt={title} />
+                  </div>
+                  <div className="info">
+                    <div className="title">{title}</div>
+                    <div className="author">Posted by {author}</div>
+                    <div className="details">
+                      {ups} upvotes, {num_comments} comments
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <h3>No Posts for the search query</h3>
+        )}
       </div>
     </div>
   );
