@@ -29,3 +29,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .post-details {
+    .go-home {
+      position: relative;
+      margin-top: 20px;
+      display: inline-block;
+      padding-left: 20px;
+    }
+  }
+}

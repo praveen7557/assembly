@@ -94,3 +94,9 @@ body {
       -2em -2em 0 0.2em;
   }
 }
+
+@media (max-width: 576px) {
+  body {
+    padding: 30px;
+  }
+}
